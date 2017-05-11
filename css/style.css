@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css?family=News+Cycle|Inconsolata|Over+the+Rainbow|Handlee|Julius+Sans+One|Josefin+Sans:300');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body{
+	background-color: #acd0c0;
+	margin: 0;
+}
+
+.container{
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+}
+
+.navigation-bar{
+	font-size: 1.2vw;
+	font-size: -webkit-calc(35% + 0.9vw);
+	font-family: 'Julius Sans One', sans-serif;
+	width: 85%;
+	margin: 0 auto;
+	margin-top: 20px;
+	background-color: white;
+	box-shadow: 0px 0px 15px 1px #456b66;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content:space-around;
+}
+nav li{
+	width: 25%;
+	text-align: center;
+}
+
+nav li::first-letter{
+	font-size: 2vw;
+	font-size: -webkit-calc(60% + 1vw);
+}
+nav a{	
+	display: block;	
+	padding: 5px 0;
+	margin:0 auto;	
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+	box-sizing: border-box;
+}
+nav a:hover{
+	font-weight:bolder;
+	}
+
+	
+.active-tab{
+background-color: #063852;
+color: white;
+font-weight: bold;
+}
+
+nav li:active, nav a:active{
+		background-color: #5882a0;
+}
+
+.content{
+	width: 90%;
+	margin: 0 auto;
+	background-color: white;
+	box-shadow: 0px 0px 15px 1px #456b66;
+	margin-top: 90px;
+	display: inline-flex;
+	overflow: visible;
+}
+
+.text
+{
+	font-family: 'News Cycle', sans-serif;
+	font-size: 1.5em;
+	font-size: -webkit-calc(60% + 1vw);
+	padding: 0;
+	width: 80%;
+	text-align: right;
+	margin: auto;
+}
+
+.text p{
+	margin-left: 20px;
+}
+
+.hi{
+	font-size: 4vw;
+	font-size: calc(150% + 1.2vw);
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: left;
+	position: absolute;
+	left: 10px;
+	padding: 5px 25px 5px 10px;
+	background-color: #063852;
+	color: white;
+	box-shadow: 0px 0px 10px 1px #1e4944;
+}
+
+
+
+.pic{
+	width: 50%;
+	padding-left: 5px;
+	margin: auto;
+	text-align: center;
+}
+
+tr{
+	height: 90px;
+}
+
+table{
+	border: none;
+}
+
+td{
+	padding: 10px;
+
+}
+
+.date{
+	font-family: 'Inconsolata', monospace;
+	font-size: 22px;
+	font-size: calc(90% + 0.6vw);
+	width: 40%;
+	text-align: right;
+	vertical-align: top;
+}
+
+.edu-inst{
+	font-family: 'News Cycle', sans-serif;
+	font-size: 22px;
+	font-size: calc(90% + 0.6vw);
+	vertical-align: top;
+	text-align: left;
+	line-height: 120%;
+	padding-bottom: 10px;
+}
+
+.even{
+	background-color: #f1f3ce;
+}
+
+.odd{
+	background-color: #00293c;
+	color: white;
+}
+
+.pic img{
+	max-height: 300px;
+	max-width: 280px;
+	padding: 15px;
+	background-color: #063852;
+	box-shadow: 0px 0px 15px 1px #1e4944;
+
+}
+
+.highlight{
+	font-size: 105%;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.hob-back-tt{
+	background-image: url("../images/table-tennis.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 0px 0px 15px 2px white;
+
+}
+
+.hob-back-hp{
+	background-image: url("../images/harry-potter.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 0px 0px 15px 2px white;
+
+}
+
+.hob-back-tv{
+	background-image: url("../images/house-md.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 0px 0px 15px 2px white;
+
+}
+
+.hobname{
+	background-color: white;
+	color: #063852;
+	box-shadow: 0px 0px 15px 2px #7ce0ef;
+}
+
+.hob-desc{
+	padding: 0px 10px;
+	background-color: rgba(255,255,255,0.7);
+	color: rgba(0,0,0,1);
+}
+
+.book-tv-name{
+	font-size: 105%;
+	font-style: italic;
+}
+
+.contact-side{
+	width: 40%;
+	background-color: #063852;
+	color: white;
+	padding: 10px;
+	display: block;
+}
+
+.info{
+	padding-left: 10px;
+	padding-top: 10px;
+	text-align: left;
+	height: 40%;
+	font-family: 'News Cycle', sans-serif;
+	font-size: -webkit-calc(50% + 1vw);
+}
+
+.info a{
+	color: white;
+	text-decoration: none;
+	text-transform: lowercase;
+	font-family: 'Inconsolata', monospace;
+	padding: 3px;
+}
+
+#ph-no{
+	padding: 3px;
+	font-family: 'Inconsolata', monospace;
+}
+
+.info a:hover{
+	font-size: 102%;
+	padding: 0;
+
+}
+
+.contact-form{
+	display: block;
+	padding: 10px;
+}
+
+.form-name-email{
+	display: flex;
+}
+
+.field-top{
+	width: 50%;
+	padding: 10px;
+}
+
+.field-label{
+	font-weight: bold;
+	text-align: left;
+	font-size: 80%;
+	font-family: 'Julius Sans One', sans-serif;
+	text-transform: uppercase;
+	padding: 8px 2px;
+}
+
+.field-box{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 25px;
+	width: 100%;
+	height: 40px;
+	background-color: #e8e8e8;
+	border: none;
+	padding-left: 10px;
+	-webkit-box-sizing: border-box;
+}
+
+.field-box:focus{
+	outline: none;
+	background-color: white;
+	box-shadow: 0px 0px 15px 1px #7ce0ef;
+}
+
+.field-box:hover{
+	box-shadow: 0px 0px 10px 1px #7ce0ef;
+}
+
+.message{
+	padding: 10px;
+}
+
+.message-input
+{
+	padding-top: 10px;
+	height: 200px;
+}
+
+.submit{
+	padding-right: 10px;
+	height: 40px;
+}
+
+.submit-button{
+	width: auto;
+	padding: 10px 40px;
+	border: none;
+	background-color: #063852;
+	font-family: 'Julius Sans One', sans-serif;
+	text-transform: uppercase;
+	font-size: 80%;
+	color: white;
+}
+
+.submit-button:hover{
+	box-shadow: 0px 0px 10px 1px #1e4944;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.submit-button:active{
+	height: initial;
+	padding: 9px 38px;
+	margin: 1px 2px;
+	box-shadow: none;
+}
+
+.soc-med{
+	margin: auto;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+}
+
+.fa {
+	padding: 30px;
+	font-size: 30px;
+	width: 40%;
+	text-align: center;
+	text-decoration: none;
+	background: white;
+	color: #063852;
+	margin: 10px 10px;
+	justify-self: center;
+	align-self: center;
+}
+
+.fa-facebook:hover{
+    box-shadow: 0px 0px 10px 2px #456796;
+}
+
+.fa-twitter:hover {
+    box-shadow: 0px 0px 10px 2px #7ae4f4;
+}
+
+.fa-google:hover {
+    box-shadow: 0px 0px 10px 2px #d34836;
+}
+
+.fa-instagram:hover {
+    box-shadow: 0px 0px 10px 2px #e89e76;
+}
+
+.fa-instagram{
+	color: #3b5998;
+}
+
+.fa-google{
+	color: #d34836;
+}
+
+.fa-twitter{
+	color: #0084b4;
+}
+
+.fa-instagram{
+	color: #5b3e2a;
+}
