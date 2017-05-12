@@ -2,6 +2,7 @@
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
+
 body{
 	background-color: #acd0c0;
 	margin: 0;
@@ -21,6 +22,23 @@ body{
 	margin-top: 20px;
 	background-color: white;
 	box-shadow: 0px 0px 15px 1px #456b66;
+	animation-name: nav;
+	animation-duration: 0.4s;
+	animation-timing-function: cubic-bezier(.4,.01,.71,1.27);
+}
+
+@keyframes nav 
+{
+	0%
+	{
+		position: relative;
+		top: -50px;
+	}
+	100%
+	{
+		position: relative;
+		top: 0px;
+	}
 }
 
 nav ul{
@@ -31,14 +49,18 @@ nav ul{
 	justify-content:space-around;
 }
 nav li{
+	background-color: white;
 	width: 25%;
 	text-align: center;
+	transition: box-shadow 0.5s, transform 0.5s;
 }
 
-nav li::first-letter{
+nav li::first-letter
+{
 	font-size: 2vw;
 	font-size: -webkit-calc(60% + 1vw);
 }
+
 nav a{	
 	display: block;	
 	padding: 5px 0;
@@ -48,19 +70,23 @@ nav a{
 	text-transform: uppercase;
 	box-sizing: border-box;
 }
-nav a:hover{
-	font-weight:bolder;
-	}
-
+nav li:hover{
+/*	width: 35%;*/
+	z-index: +1;
+	transform: scale(1.08);
+	box-shadow: 0px 0px 15px 1px #456b66;
+}
 	
 .active-tab{
-background-color: #063852;
-color: white;
-font-weight: bold;
+	transform: scale(1.11);
+	background-color: #063852;
+	color: white;
+	font-weight: bold;
+	margin: auto;
 }
 
 nav li:active, nav a:active{
-		background-color: #5882a0;
+	background-color: #5882a0;
 }
 
 .content{
@@ -71,6 +97,25 @@ nav li:active, nav a:active{
 	margin-top: 90px;
 	display: inline-flex;
 	overflow: visible;
+	animation-name: card;
+	animation-duration: 1.5s;
+}
+
+
+@keyframes card
+{
+	0%, 40%
+	{
+		position: relative;
+		left: 1500px;
+	}
+
+	100%
+	{
+		position: relative;
+		left: 0px;
+	}
+
 }
 
 .text
@@ -88,6 +133,8 @@ nav li:active, nav a:active{
 	margin-left: 20px;
 }
 
+
+
 .hi{
 	font-size: 4vw;
 	font-size: calc(150% + 1.2vw);
@@ -99,9 +146,17 @@ nav li:active, nav a:active{
 	background-color: #063852;
 	color: white;
 	box-shadow: 0px 0px 10px 1px #1e4944;
+	animation: hi 2.5s;
 }
 
+@keyframes hi{
+	0%,30%
+	{
+		position: absolute;
+		left: -2000px;
+	}
 
+}
 
 .pic{
 	width: 50%;
@@ -120,7 +175,6 @@ table{
 
 td{
 	padding: 10px;
-
 }
 
 .date{
@@ -158,7 +212,11 @@ td{
 	padding: 15px;
 	background-color: #063852;
 	box-shadow: 0px 0px 15px 1px #1e4944;
+	transition: transform 0.5s;
+}
 
+.pic img:hover{
+	transform: scale(1.1);
 }
 
 .highlight{
@@ -231,6 +289,7 @@ td{
 	text-transform: lowercase;
 	font-family: 'Inconsolata', monospace;
 	padding: 3px;
+	transition: font-size 0.3s;
 }
 
 #ph-no{
@@ -241,7 +300,6 @@ td{
 .info a:hover{
 	font-size: 102%;
 	padding: 0;
-
 }
 
 .contact-form{
@@ -282,6 +340,14 @@ td{
 	outline: none;
 	background-color: white;
 	box-shadow: 0px 0px 15px 1px #7ce0ef;
+	animation: bob 1s infinite;
+}
+
+@keyframes bob
+{
+	50%{
+	box-shadow: 0px 0px 40px 1px #7ce0ef;
+	}
 }
 
 .field-box:hover{
@@ -345,6 +411,11 @@ td{
 	margin: 5px 5px;
 	justify-self: center;
 	align-self: center;
+	transition: transform 0.5s;
+}
+
+.fa:hover{
+	transform: scale(1.07);
 }
 
 .fa-facebook:hover{
